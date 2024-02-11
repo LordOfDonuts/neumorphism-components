@@ -1,0 +1,15 @@
+.click-me-btn {
+  border: none;
+  border-radius: 0.5rem;
+  width: 100%;
+  height: 200px;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #44476a;
+  background-color: #ecf0f3;
+  box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8), 6px 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.click-me-btn:active {
+  box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5), inset 8px 8px 16px rgba(0, 0, 0, 0.1);
+}

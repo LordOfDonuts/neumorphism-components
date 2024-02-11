@@ -1,0 +1,42 @@
+.phone-buttons {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.phone-buttons input[type='radio'] {
+  display: none;
+}
+
+.phone-buttons label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ecf0f3;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.5rem;
+  width: 350px;
+  border: none;
+  border-radius: 3rem;
+  box-shadow: 5px 5px 10px -1px rgba(0, 0, 0, 0.1),
+    -7px -7px 10px -1px rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+}
+
+
+.phone-buttons input:checked ~ label {
+  box-shadow: inset 5px 5px 10px -1px rgba(0, 0, 0, 0.1),
+    inset -7px -7px 10px -1px rgba(255, 255, 255, 0.7);
+}
+
+.phone-buttons label.accept {
+  color: #00a037;
+}
+
+.phone-buttons label.reject {
+  color: #ed0000;
+}

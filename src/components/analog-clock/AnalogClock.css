@@ -1,0 +1,119 @@
+.analog-clock {
+  position: relative;
+  width: 520px;
+  height: 520px;
+  border-radius: 50%;
+  border: 1rem solid #ecf0f3;
+  box-shadow: -3px -3px 7px #fff, 5px 5px 5px rgba(94, 104, 121, 0.288),
+    inset -3px -3px 7px #fff, inset 5px 5px 5px rgba(94, 104, 121, 0.288);
+}
+
+.analog-clock .middle-gear {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ecf0f3;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  box-shadow: -2px -2px 5px #fff, 2px 2px 5px rgba(94, 104, 121, 0.288);
+  z-index: 1;
+}
+
+.analog-clock .sticks {
+  list-style-type: none;
+}
+
+.analog-clock .sticks .stick-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.analog-clock .sticks .stick-container:nth-child(2) {
+  transform: translate(-50%, -50%) rotate(30deg);
+}
+.analog-clock .sticks .stick-container:nth-child(3) {
+  transform: translate(-50%, -50%) rotate(60deg);
+}
+.analog-clock .sticks .stick-container:nth-child(4) {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+.analog-clock .sticks .stick-container:nth-child(5) {
+  transform: translate(-50%, -50%) rotate(120deg);
+}
+.analog-clock .sticks .stick-container:nth-child(6) {
+  transform: translate(-50%, -50%) rotate(150deg);
+}
+.analog-clock .sticks .stick-container:nth-child(7) {
+  transform: translate(-50%, -50%) rotate(180deg);
+}
+.analog-clock .sticks .stick-container:nth-child(8) {
+  transform: translate(-50%, -50%) rotate(210deg);
+}
+.analog-clock .sticks .stick-container:nth-child(9) {
+  transform: translate(-50%, -50%) rotate(240deg);
+}
+.analog-clock .sticks .stick-container:nth-child(10) {
+  transform: translate(-50%, -50%) rotate(270deg);
+}
+.analog-clock .sticks .stick-container:nth-child(11) {
+  transform: translate(-50%, -50%) rotate(300deg);
+}
+.analog-clock .sticks .stick-container:nth-child(12) {
+  transform: translate(-50%, -50%) rotate(330deg);
+}
+
+.analog-clock .sticks .stick {
+  width: 4px;
+  height: 12px;
+  border-radius: 1rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  transform: translateY(-215px);
+}
+
+.analog-clock .clock-hands {
+  list-style-type: none;
+}
+
+.analog-clock .clock-hands .hand-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.analog-clock .clock-hands .hand {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -100%);
+  width: 4px;
+  height: 200px;
+  background-color: rgba(94, 104, 121, 1);
+  border-radius: 1rem;
+}
+
+.analog-clock .clock-hands .minute-hand {
+  width: 6px;
+  height: 160px;
+}
+
+.analog-clock .clock-hands .hour-hand {
+  width: 8px;
+  height: 120px;
+}
+
+.analog-clock .clock-hands .second-hand-container {
+  transform: translate(-50%, -50%) rotate(var(--seconds-degree));
+}
+
+.analog-clock .clock-hands .minute-hand-container {
+  transform: translate(-50%, -50%) rotate(var(--minutes-degree));
+}
+
+.analog-clock .clock-hands .hour-hand-container {
+  transform: translate(-50%, -50%) rotate(var(--hours-degree));
+}

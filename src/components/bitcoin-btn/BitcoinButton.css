@@ -1,0 +1,71 @@
+.bitcoin-btn-container {
+  height: 210px;
+  width: 210px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bitcoin-btn-container .bitcoin-btn {
+  position: absolute;
+  appearance: none;
+  -webkit-appearance: none;
+  width: 130px;
+  height: 130px;
+  background-color: #ecf0f3;
+  box-shadow: -3px -3px 7px #fff, 5px 5px 5px rgba(94, 104, 121, 0.288);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.bitcoin-btn-container.active .bitcoin-btn {
+  box-shadow: inset -3px -3px 7px #fff, inset 5px 5px 5px rgba(94, 104, 121, 0.288);
+}
+
+.bitcoin-btn-container .bitcoin-btn::before {
+  content: '';
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  background-color: #ecf0f3;
+  border-radius: 50%;
+  z-index: -1;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bitcoin-btn-container .bitcoin-btn::after {
+  content: '';
+  position: absolute;
+  height: 210px;
+  width: 210px;
+  border-radius: 50%;
+  background-color: #ecf0f3;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.2);
+  z-index: -2;
+  transition: background-color 0.2s ease;
+}
+
+.bitcoin-btn-container.active .bitcoin-btn::after {
+  background-color: #FF9900;
+}
+
+.bitcoin-btn-container .bitcoin-icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3.5rem;
+  color: #a8aaba;
+  cursor: pointer;
+  transition: color 0.2s ease, font-size 0.2s ease;
+}
+
+.bitcoin-btn-container.active .bitcoin-icon {
+  color: #FF9900;
+  font-size: 3.15rem;
+}
