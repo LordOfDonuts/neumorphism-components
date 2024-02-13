@@ -35,7 +35,7 @@ const Calculator = () => {
 
   return (
     <div className='calculator'>
-      <form action='#'>
+      <form action='#' onSubmit={evaluate}>
         <div className='result'>
           <input
             type='text'
